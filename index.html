@@ -8,10 +8,17 @@
 
 <body>
     <!-- - User Story #1: I can see a title with id="title" in H1 sized text. -->
-    <h1 id="title">surveyTitleWillGoHere</h1>
+    <div class="title-container">
+        <h1 id="title">Would you Rather?</h1>
+    </div>
 
     <!-- - User Story #2: I can see a short explanation with id="description" in P sized text. -->
-    <p id="description">descriptionOfSurveryGoesHere</p>
+    <div class="description-container">
+        <p id="description">A Quick <strong>"Would You Rather Game?"</strong> to <em>kill</em> some time.
+            <br/>
+            Hello...do you want to play a game?
+        </p>
+    </div>
 
     <!-- - User Story #3: I can see a form with id="survey-form". -->
     <form id="survey-form">
@@ -21,27 +28,112 @@
         <!-- - User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field. -->
 
         <!-- - User Story #4: Inside the form element, I am required to enter my name in a field with id="name". -->
-        <label id="name-label" for="name">Name:</label>
-        <input id="name" type="text" name="name" placeholder="enter your name here" required/>
+        <div class="name">
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="enter your name" required/>
+        </div>
 
         <!-- - User Story #5: Inside the form element, I am required to enter an email in a field with id="email". -->
         <!-- - User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
-        <label id="email-label" for="email">Email:</label>
-        <input id="email" type="email" name="email" placeholder="" required/>
+        <div class="email-container">
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="enter your email" required/>
+        </div>
 
         <!-- - User Story #7: Inside the form, I can enter a number in a field with id="number". -->
         <!-- - User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error. -->
         <!-- - User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
-        <label id="number-label" for="age">Age:</label>
-        <input id="number" type="number" name="age" min="21" max="121" pattern="\d*"/>
+        <div class="age-container">
+            <label id="number-label" for="age">Age:</label>
+            <input id="number" type="number" name="age" min="18" max="121" pattern="\d*" placeholder="18+"/>
+        </div>
+
+        <!-- - User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
+        
+        <div class="dropdown-container">
+            <p>What's your favorite kind of scary movie?</p>
+            <select id="dropdown">
+                <option disabled selected value>Make your selection</option>
+                <option>Killer, Gore and Disturbing</option>
+                <option>Psychological</option>
+                <option>Fantasy and Sci-fi</option>
+                <option>Paranormal and Supernatural</option>
+                <option>Does Not Apply</option>
+            </select>
+        </div>
+        
+
+        <!-- - User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
+        <div class="radio-container">
+            <p></p>
+            <p>
+                <input type="radio" name="radio"/>
+                play with a cursed Ouija board
+                <br/>
+                or
+                <br/>
+                <input type="radio" name="radio" value="OPTION1"/>
+                spend a weekend in a haunted cabin in the woods?
+            </p>
+
+            <p>
+                <input type="radio" name="radio" value="OPTION2"/>
+                
+            </p>
+
+            <p>
+                <input type="radio" name="radio" value="OPTION4"/>
+                
+            </p>
+
+            <p>
+                <input type="radio" name="radio" value="OPTION4"/>
+                 
+            </p>
+
+            <p>
+                <input type="radio" name="radio" value="OPTION4"/>
+                
+            </p>
+            
+        </div>
+
+        <!-- - User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
+        <div class="checkbox-container">
+            <div>
+                <p>Let's dig a little deeper into the grave...</p>
+                <p>Check all that apply</p>
+            </div>
+
+            <div>
+                <p>
+                    <input type="checkbox" name="checkbox" />
+                    Slasher, Spallter, Torture and Cannibal
+                </p>
+
+                <p>
+                    <input type="checkbox" name="checkbox" />
+                    Phobia, Home Invasion, Maddness and Paranoia
+                </p>
+
+                <p>
+                    <input type="checkbox" name="checkbox" />
+                    Vampires, Werewolves, Witches, and Zombies
+                </p>
+
+                <p>
+                    <input type="checkbox" name="checkbox" />
+                    Haunted House, Possession, Ghosts, Demons, and Entities 
+                </p>
+            </div>
+        </div>
+
+
     </form>
     
 
-    <!-- - User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
 
-    <!-- - User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
 
-    <!-- - User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
 
     <!-- - User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
 
