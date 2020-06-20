@@ -8,6 +8,8 @@
 
 <body>
     <!-- - User Story #1: I can see a title with id="title" in H1 sized text. -->
+
+    
     <div class="title-container">
         <h1 id="title">Would you Rather?</h1>
     </div>
@@ -16,7 +18,9 @@
     <div class="description-container">
         <p id="description">A Quick <strong>"Would You Rather Game?"</strong> to <em>kill</em> some time.
             <br/>
-            Hello...do you want to play a game?
+            <div>
+                Hello...do you want to play a game?
+            </div>
         </p>
     </div>
 
@@ -61,83 +65,196 @@
                 <option>Does Not Apply</option>
             </select>
         </div>
-        
 
         <!-- - User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
         <div class="radio-container">
-            <p></p>
-            <p>
-                <input type="radio" name="radio"/>
-                play with a cursed Ouija board
-                <br/>
-                or
-                <br/>
-                <input type="radio" name="radio" value="OPTION1"/>
-                spend a weekend in a haunted cabin in the woods?
-            </p>
+            <h3>Would you rather...</h3>
+            
+            <div>
+                <p>
+                    <input type="radio" name="radio" value="radio-option" />
+                    play with a cursed Ouija board
+                    <br/>
+                    or
+                    <br/>
+                    <input type="radio" name="radio" value="radio-option" />
+                    spend a weekend, alone, in a haunted cabin in the woods?
+                </p>
+            </div>
 
-            <p>
-                <input type="radio" name="radio" value="OPTION2"/>
-                
-            </p>
+            <div>
+                <p>
+                    <input type="radio" name="radio1" value="radio-option" />
+                    see Pennywise from 'It'
+                    <br/>
+                    or
+                    <br/>
+                    <input type="radio" name="radio1" value="radio-option" />
+                    Twisty from 'American Horror Story', when you wake up and see a clown hovering over your bed?
+                </p>
+            </div>
 
-            <p>
-                <input type="radio" name="radio" value="OPTION4"/>
-                
-            </p>
+            <div>
+                <p>
+                    <input type="radio" name="radio2" value="radio-option" />
+                    be forced to eat a bowl of raw worms
+                    <br/>
+                    or
+                    <br/>
+                    <input type="radio" name="radio2" value="radio-option" />
+                    have live spiders dumped on your naked body?
+                </p>
+            </div>
 
-            <p>
-                <input type="radio" name="radio" value="OPTION4"/>
-                 
-            </p>
+            <div>
+                <p>
+                    <input type="radio" name="radio3" value="radio-option" />
+                    Trapped in a house with a murderer but you can't HEAR anything
+                    <br/>
+                    or
+                    <br/>
+                    <input type="radio" name="radio3" value="radio-option" />
+                    trapped in a house with a murderer but you can't SEE anything?
+                </p>
+            </div>
 
-            <p>
-                <input type="radio" name="radio" value="OPTION4"/>
-                
-            </p>
+            <div>
+                <p>
+                    <input type="radio" name="radio4" value="radio-option" />
+                    be violently hunted in The Purge
+                    <br/>
+                    or
+                    <br/>
+                    <input type="radio" name="radio4" value="radio-option" />
+                    wake up to find out there has been a zombie apocalypse but you survived?
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    <input type="radio" name="radio5" value="radio-option" />
+                    watch your best friend be tortured by Jigsaw 
+                    <br/>
+                    or
+                    <br/>
+                    <input type="radio" name="radio5" value="radio-option" />
+                    have to cut off your own arm in one of his traps?
+                </p>
+            </div>
+            
+            <div>
+                <p>
+                    <input type="radio" name="radio6" value="radio-option" />
+                    be possessed by a demon
+                    <br/>
+                    or
+                    <br/>
+                    <input type="radio" name="radio6" value="radio-option" />
+                    find out your whole family has been possessed your entire life?
+                </p>
+            </div>
+            
+            <div>
+                <p>
+                    <input type="radio" name="radio7" value="radio-option" />
+                    be locked in a haunted insane asylum 
+                    <br/>
+                    or
+                    <br/>
+                    <input type="radio" name="radio7" value="radio-option" />
+                    lost in the woods with a killer on the loose?
+                </p>
+            </div>
+            
+            <div>
+                <p>
+                    <input type="radio" name="radio8" value="radio-option" />
+                    visit Silent Hill
+                    <br/>
+                    or
+                    <br/>
+                    <input type="radio" name="radio8" value="radio-option" />
+                    Raccoon City?
+                </p>
+            </div>
             
         </div>
 
         <!-- - User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
         <div class="checkbox-container">
             <div>
-                <p>Let's dig a little deeper into the grave...</p>
+                <p><strong>What other movies do you enjoy watching?</strong></p>
                 <p>Check all that apply</p>
             </div>
 
             <div>
-                <p>
-                    <input type="checkbox" name="checkbox" />
-                    Slasher, Spallter, Torture and Cannibal
-                </p>
+                <div>
+                    <p>
+                        <input type="checkbox" name="checkbox" value="rom"/>
+                        Rom-Coms
+                    </p>
+                </div>
+                
+                <div>
+                    <p>
+                        <input type="checkbox" name="checkbox" value="drama" />
+                        Drama
+                    </p>
+                </div>
 
-                <p>
-                    <input type="checkbox" name="checkbox" />
-                    Phobia, Home Invasion, Maddness and Paranoia
-                </p>
+                <div>
+                    <p>
+                        <input type="checkbox" name="checkbox" value="comedy" />
+                        Comedy
+                    </p>
+                </div>
 
-                <p>
-                    <input type="checkbox" name="checkbox" />
-                    Vampires, Werewolves, Witches, and Zombies
-                </p>
+                <div>
+                    <p>
+                        <input type="checkbox" name="checkbox" value="sci-fi" />
+                        Sci-fi
+                    </p>
+                </div>
 
-                <p>
-                    <input type="checkbox" name="checkbox" />
-                    Haunted House, Possession, Ghosts, Demons, and Entities 
-                </p>
+                <div>
+                    <p>
+                        <input type="checkbox" name="checkbox" value="suspense" />
+                        Suspense
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <input type="checkbox" name="checkbox" value="action" />
+                        Action
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <input type="checkbox" name="checkbox" value="adventure" />
+                        Adventur
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <input type="checkbox" name="checkbox" value="other" />
+                        Other
+                    </p>
+                </div>
             </div>
         </div>
 
+        <!-- - User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
+        <p>What's your favorite scary movie?</p>
+        <textarea placeholder="Don't be frightened, go ahead and answer"></textarea>
 
+        <!-- - User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
     </form>
-    
-
-
-
-
-    <!-- - User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
-
-    <!-- - User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->
-    
+        
 </body>
 </html>

@@ -1,5 +1,7 @@
 # fcc-survey-form
 
+**side note: this did not text responsive design. This only tested HTML. 
+
 freecodecamp.org Responsive Design Pt. 2
 
 Responsive Web Design Projects - Build a Survey Form
